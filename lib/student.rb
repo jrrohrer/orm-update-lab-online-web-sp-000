@@ -42,7 +42,13 @@ class Student
     end
   end
   
-  def self.create 
+  def self.create(name:, grade:)
+    student = Student.new(name, album)
+    student.save
+    student
+  end
+  
+  def self.new_from_db(array)
     
   end
 
